@@ -1,0 +1,210 @@
+
+/*单元项*/
+.item {
+    box-sizing: border-box;
+    width: 100%;
+    height: 220px;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+}
+
+.item .select {
+    display: block;
+    width: 45px;
+    height: 44px;
+    border-radius: 23px;
+    /*background: #ff3939;*/
+    background:url(../images/allbgs.png) no-repeat 0 -877px;
+    padding-left:46px;
+    margin: 87px 0 87px 30px;
+    float: left;
+}
+
+.item .icon {
+    width: 160px;
+    height: 160px;
+    background:url(../images/allbgs.png) no-repeat 0 -2581px;
+    float: left;
+    padding-left:162px;
+    margin:30px 0 30px -26px;
+}
+/*名称 描述 盒子*/
+.item .name {
+    width: 40%;
+    height: 50%;
+    float: left;
+    margin:30px 0 0 -140px;
+}
+
+.item .name .title {
+    display: block;
+    font-size: 24px;
+    line-height: 36px;
+    /*color: #333333;*/
+}
+ .item .name .description {
+     display: block;
+     font-size: 24px;
+     line-height:36px;
+     color: #adadad;
+ }
+.item .name .money {
+    display: block;
+    margin-top: 30px;
+    color: #ff3939;
+}
+/*加减 删除 盒子*/
+.item .number {
+    float: right;
+    box-sizing: border-box;
+    /*border:1px solid #ff0000;*/
+    width: 30%;
+    height: 100%;
+    margin-top: -140px;
+    position: relative;
+    /*background-color: #898989;*/
+    
+}
+
+.item .number .delete {
+    position: absolute;
+    background:url(../images/allbgs.png) no-repeat 0 -836px;
+    height:41px;padding-left:40px;
+    right: 32px;
+    top:22px;
+}
+.item .number .plus {
+    position: absolute;
+    color: #ff3939;
+    background-color: #ffffff;
+    font-size: 48px;
+    right: 50px;
+    bottom:25px;
+    z-index: 10;
+}
+
+.item .number #num {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 98px;
+    bottom:22px;
+    font-size: 36px;
+    z-index: 10;
+    /*box-shadow: 50px 50px #e5e5e5 inset;*/
+}
+
+.item .number .minus {
+    position: absolute;
+    color: #ff3939;
+    background-color: #ffffff;
+    font-size: 48px;
+    left:7px;
+    bottom:25px;
+    z-index: 10;
+}
+
+/*数组底部 波浪图*/
+.shopCartBg {
+    background:url(../images/allbgs.png) no-repeat 0 -14px;
+    width: 100%;
+    height:21px;
+    /*padding-left:752px;*/
+    /*border: 1px solid #ff0000;*/
+}
+
+
+
+/*礼品券 优惠券*/
+.giftCoupon,
+.coupon {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+}
+.giftCoupon {
+    margin-top: 20px;
+}
+.coupon {
+    margin-bottom: 140px;
+}
+.giftCoupon .text,
+.coupon .text {
+    text-indent: 1em;
+    float: left;
+    line-height: 80px;
+}
+.giftCoupon .box,
+.coupon .box {
+    float: right;
+    /*border: 1px solid #ff0000;*/
+    width: 18px;
+    margin: 15px 32px 15px 0;
+    overflow: hidden;
+}
+
+.giftCoupon .tu,
+.coupon .tu {
+    margin-left: -18px;
+    font-size: 60px;
+    /*font-weight: 900;*/
+    color: #c7c7cc;
+
+}
+
+.total {
+    width: 100%;
+    height: 110px;
+    line-height: 110px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    /*position: fixed;*/
+    /*bottom: 104px;*/
+}
+
+
+.total .select {
+    display: block;
+    width: 45px;
+    height: 44px;
+    border-radius: 23px;
+    /*background: #ff3939;*/
+    background:url(../images/allbgs.png) no-repeat 0 -877px;
+    padding-left:46px;
+    margin: 33px 0 33px 30px;
+    float: left;
+}
+
+.total .selectAll {
+    /*line-height: 110px;*/
+    padding-left: -10px;
+}
+
+.total .totalMoney {
+
+}
+
+.total .money {
+    color: #ff3939;
+}
+
+.total .settleAccount {
+    width: 230px;
+    height: 80px;
+    color: #ffffff;
+    background-color: #ff3939;
+    border-radius: 5px;
+    float: right;
+    margin: 15px 32px 15px 0;
+
+}
+
+
+
+
+

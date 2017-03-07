@@ -1,0 +1,494 @@
+
+/*轮播图*/
+#carousel {
+    position:relative;
+    width:100%;
+    height:290px;
+    overflow:hidden;
+    /*border-radius:5px*/
+}
+#dis{
+    width: 240px;
+    position:absolute;
+    left:50%;
+    margin-left: -120px;
+    bottom:10px;
+    opacity:.8;
+    z-index:5;
+}
+#dis li a {
+    display:inline-block;
+    width:60px;
+    height:5px;
+    /*line-height: 20px;*/
+    margin:0 10px;
+    float:left;
+    text-align:center;
+    color:#fff;
+    border-radius:10px;
+    background:#ffffff;
+    z-index: 10;
+
+}
+#photos img{
+    float:left;
+    width:750px;
+    height:290px
+}
+#photos {
+    position: absolute;
+    z-index:1;
+    width: calc(750px * 3);/*---修改图片数量的话需要修改下面的动画参数*/
+}
+.play{
+    animation: ma 10s ease infinite normal;
+}
+@-webkit-keyframes ma {
+    0%, 20% {
+        margin-left: 0;
+    }
+    20%, 40% {
+        margin-left:  -750px;
+    }
+    40%, 60% {
+        margin-left:  -750px;
+    }
+    60%, 90% {
+        margin-left:  -1500px;
+    }
+    90%, 100% {
+        margin-left: -1500px;
+    }
+
+}
+#carousel ul li a:hover {
+    background-color: #ff0000;
+}
+
+
+/*商标查询、分类*/
+.logo {
+    width: 100%;
+    height: 100px;
+    /*margin-left: -29px;*/
+    line-height: 100px;
+    text-align: center;
+    color: #ffffff;
+
+}
+.logo .find,
+.logo .category {
+    /*box-sizing:border-box;*/
+    display: block;
+    width: 50%;
+    height: 100px;
+    float: left;
+    font-size: 30px;
+
+    background-color: #ff3939;
+    color: #ffffff;
+    /*background-image: url();*/
+}
+.logo .find .find_left{
+    display: block;
+    /*height: 100%;*/
+    /*width: 20%;*/
+    float: left;
+    margin-left:25%;
+    margin-top: 33px;
+    line-height: 100px;
+    /*margin-top: 20px;*/
+    background:url(../images/allbgs.png) no-repeat 0 -233px;
+    height:36px;
+    padding-left:38px;
+}
+
+.logo .text {
+    display: block;
+    width: 40%;
+    height: 100%;
+    line-height: 100px;
+    float: right;
+    margin-right: 20%;
+}
+
+.logo .category {
+    box-sizing: border-box;
+    /*width: 50%;*/
+    height: 100px;
+    float: left;
+    /*margin-left: 1px;*/
+    font-size: 30px;
+    /*margin-left: 1px;*/
+    background-color: #ff3939;
+    color: #ffffff;
+    border-left: 1px solid #ffffff;
+
+    /*background-image: url();*/
+
+}
+.logo .category .category_right {
+    display: block;
+    /*height: 100%;*/
+    /*width: 20%;*/
+    float: left;
+    margin-left: 25%;
+    margin-top: 32px;
+    /*background: url(../images/footicon-01-b.png) no-repeat center center;*/
+    background:url(../images/allbgs.png) no-repeat 0 -269px;
+    height:36px;
+    padding-left:38px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*商标服务  专利服务*/
+.logoServe,
+.patentServe{
+    width: 100%;
+    height: 80px;
+    line-height: 78px;
+    text-align: center;
+    color: #999999;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    /*border-top: 1px solid #e5e5e5;*/
+    font-size: 22px;
+}
+
+/*专利服务上外边距*/
+.patentServe {
+    margin-top: 26px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/*服务列表四项*/
+.serveList,
+.patentServeList {
+    height: 510px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.serveList .top,
+.patentServeList .top {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 255px;
+    /*position: relative;*/
+    border-bottom:1px solid #e5e5e5 ;
+}
+
+
+/*商标加急注册   发明专利担保注册*/
+.serveList .top .left,
+.patentServeList .top .left {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    /*border-bottom:1px solid #e5e5e5 ;*/
+    border-right: 1px solid #e5e5e5 ;
+    background-color: #ffffff;
+    float: left;
+}
+.serveList .top .left a .left_tu,
+.patentServeList .top .left a .left_tu {
+    display: block;
+    /*height: 50%;*/
+    width: 86px;
+    margin:15px 144px;
+
+}
+.serveList .top .left a .left_tu {
+    background: url(../images/allbgs.png) no-repeat 0 -1743px;
+
+    height:100px;
+    /*padding-left:88px;*/
+}
+.patentServeList .top .left a .left_tu {
+
+    background:url(../images/allbgs.png) no-repeat 0 -1643px;
+    height:100px;
+    /*padding-left:88px;*/
+}
+
+
+/*文本样式统一*/
+.serveList a .text, .serveList .top .left a .left_tu,
+.patentServeList a .text,.serveList .top .left a .left_tu
+{
+    font-size: 32px;
+    color: #333333;
+}
+.serveList .top .left a .text,
+.patentServeList .top .left a .text
+{
+    display: block;
+    width: 100%;
+    height: 25%;
+    line-height:63px;
+    text-align: center;
+}
+
+/*人民币 样式 统一*/
+.serveList .money,
+.patentServeList .money{
+    font-size: 28px;
+    color: #ff3333;
+}
+.serveList .top .left a .money ,
+.patentServeList .top .left a .money{
+    display: block;
+    width: 100%;
+    height: 20%;
+    line-height:50px;
+    text-align: center;
+}
+
+
+
+
+/*商标担保注册  实用新型担保注册*/
+.serveList .top .right,
+.patentServeList .top .right {
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    float: right;
+}
+.serveList .top .right a .right_tu,
+.patentServeList .top .right a .right_tu {
+    display: block;
+    /*height: 50%;*/
+    width: 86px;
+    margin:15px 144px;
+
+}
+
+.serveList .top .right a .right_tu {
+
+    background:url(../images/allbgs.png) no-repeat 0 -2043px;
+    height:99px;
+
+    /*padding-left:88px;*/
+}
+.patentServeList .top .right a .right_tu {
+
+    background:url(../images/allbgs.png) no-repeat 0 -1943px;
+    height:100px;
+    /*padding-left:88px;*/
+}
+
+
+.serveList .top .right a .text,
+.patentServeList .top .right a .text {
+    display: block;
+    width: 100%;
+    height: 25%;
+    line-height:63px;
+    text-align: center;
+}
+.serveList .top .right a .money,
+.patentServeList .top .right a .money {
+    display: block;
+    width: 100%;
+    height: 20%;
+    line-height:50px;
+    text-align: center;
+}
+
+/*下面两项*/
+.serveList .bottom,
+.patentServeList .bottom {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 255px;
+    /*position: relative;*/
+    border-bottom:1px solid #e5e5e5 ;
+    margin-bottom: 104px;
+}
+/*设计+商标注册   外观专利担保注册*/
+.serveList .bottom  .left,
+.patentServeList .bottom  .left {
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid #e5e5e5 ;
+    background-color: #ffffff;
+    float: left;
+}
+.serveList .bottom  .left a .left_tu,
+.patentServeList .bottom  .left a .left_tu {
+    display: block;
+    /*height: 50%;*/
+    width: 86px;
+    margin:15px 144px;
+}
+.serveList .bottom .left a .left_tu {
+    background:url(../images/allbgs.png) no-repeat 0 -1343px;
+    height:100px;
+    /*padding-left:88px;*/
+}
+.patentServeList .bottom .left a .left_tu {
+    background:url(../images/allbgs.png) no-repeat 0 -1843px;
+    height:100px;
+    /*padding-left:88px;*/
+}
+
+.serveList .bottom .left a .text,
+.patentServeList .bottom .left a .text {
+    display: block;
+    width: 100%;
+    height: 25%;
+    line-height:63px;
+    text-align: center;
+}
+.serveList .bottom  .left a .money,
+.patentServeList .bottom  .left a .money {
+    display: block;
+    width: 100%;
+    height: 20%;
+    line-height:50px;
+    text-align: center;
+}
+
+/*设计+商标注册+版权  实用新型+外观*/
+.serveList .bottom  .right,
+.patentServeList .bottom  .right {
+    height: 100%;
+    width: 50%;
+
+    background-color: #ffffff;
+    float: right;
+}
+.serveList .bottom .right a .right_tu,
+.patentServeList .bottom .right a .right_tu {
+    display: block;
+    /*height: 50%;*/
+    width: 86px;
+    margin:15px 144px;
+}
+.serveList .bottom .right a .right_tu {
+    background:url(../images/allbgs.png) no-repeat 0 -1543px;
+
+    height:100px;
+    /*padding-left:88px;*/
+}
+.patentServeList .bottom .right a .right_tu {
+    background:url(../images/allbgs.png) no-repeat 0 -1443px;
+    height:100px;
+    /*padding-left:88px;*/
+}
+
+.serveList .bottom .right a .text,
+.patentServeList .bottom .right a .text {
+    display: block;
+    width: 100%;
+    height: 25%;
+    line-height:63px;
+    text-align: center;
+}
+.serveList .bottom .right a .money,
+.patentServeList .bottom .right a .money {
+    display: block;
+    width: 100%;
+    height: 20%;
+    line-height:50px;
+    text-align: center;
+}
+
+/*底部*/
+.foot {
+    height: 104px;
+    width: 100%;
+    /*margin-top: 40px;*/
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    /*定位到手机底部*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+}
+.foot a {
+    display: inline-block;
+    margin-right: 0;
+    height: 100%;
+    width: 25%;
+    font-size: 20px;
+    text-align:center;
+    position: relative;
+}
+.foot .one .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -377px;
+    width: 42px;
+    height: 37px;
+    margin: 15px 73px;
+}
+.foot .two .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -678px;
+    height:39px;
+    margin: 15px 74px;
+}
+.foot .three .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -718px;
+    height:38px;
+    width: 52px;
+    /*margin: 15px 68px;*/
+}
+.foot .four .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -600px;
+    height:39px;
+    width: 40px;
+    margin: 15px 74px;
+}
+
+/*购物车 数量图标  隐藏，js显示*/
+.foot .three .tu {
+    box-sizing: border-box;
+    width: 70px;
+    height: 39px;
+    float: left;
+    position: relative;
+    margin: 15px 58px;
+}
+.foot .three .tu .num {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: none;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    background-color: #ff3a3a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 24px;
+    top:0;
+    right: 0;
+}
+
+.foot .text{
+    line-height: 34px;
+    height: 30%;
+    width: 100%;
+    font-size: 20px;
+    text-align:center;
+    /*padding-bottom: 10px;*/
+    position: absolute;
+    bottom:15px;
+}
+
+
+
+
+

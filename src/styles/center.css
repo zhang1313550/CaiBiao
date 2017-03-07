@@ -1,0 +1,453 @@
+/*头像*/
+.banner {
+    /*box-sizing: border-box;*/
+    width: 100%;
+    height: 290px;
+    background:url("../images/center-bg.png");
+    border-top: 1px solid;
+}
+.banner .photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 85px;
+    margin: 35px auto;
+    background: url("../images/ren.png") no-repeat center center;
+}
+.banner .text {
+    display: block;
+    height: 48px;
+    font: 34px/48px "mycrosoft yahei";
+    /*line-height: 48px;*/
+    text-align: center;
+    /*margin: 0 auto;*/
+    margin-top: -20px;
+
+    color: #ffffff;
+}
+
+/*我的订单 查看全部*/
+
+.order {
+    height: 100px;
+    background-color: #ffffff;
+    color: #333333;
+}
+.order .myOrder,
+.order .all {
+    /*box-sizing: border-box;*/
+    display: block;
+    width: 50%;
+    line-height: 100px;
+    float: left;
+    /*border: 1px solid #ff0000;*/
+}
+/*.order .all {*/
+
+    /*!*margin-: 32px;*!*/
+/*}*/
+.order .myOrder .order_pic {
+    display: block;
+    float: left;
+    width: 30px;
+    height:37px;
+    background:url(../images/allbgs.png) no-repeat 0 -526px;
+    padding-left:32px;
+    margin: 32px 32px;
+}
+
+.order .myOrder .text
+{
+    display: block;
+    float: left;
+    /*font:37px/42px "microsoft yahei";*/
+    line-height:100px;
+    margin-left: -45px;
+    color: #333333;
+    /*padding-top: -10px;*/
+
+}
+
+.order .all .text {
+    display: block;
+    float: right;
+    margin-right: 32px;
+    font-size: 24px;
+    color: #999999;
+}
+
+/*待付款 已完成*/
+.pay {
+    /*box-sizing: border-box;*/
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 120px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.pay .wait,
+.pay .already {
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+.pay .wait {
+    box-sizing: border-box;
+    border-right: 1px solid #e5e5e5;
+    float: left;
+}
+.pay .already {
+    float: right;
+}
+
+.pay .wait .tu {
+    box-sizing: border-box;
+    width: 90px;
+    height: 56px;
+    float: left;
+    position: relative;
+    margin:32px -10px 32px 92px;
+    /*border: 1px solid red;*/
+}
+.pay .wait .tu .wait_pic {
+    width: 45px;
+    height: 37px;
+    display: block;
+    background:url(../images/allbgs.png) no-repeat 0 -451px;
+    padding-left:45px;
+    margin-top: 11px;
+}
+
+/*待付款数量 默认隐藏*/
+.pay .wait .tu .num {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 15px;
+    background-color: #ff3a3a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 24px;
+    /*font-weight: 900;*/
+    top:3px;
+    right: 32px;
+}
+.pay .already .already_pic {
+    width: 44px;
+    height: 44px;
+    display: block;
+    float: left;
+    background:url(../images/allbgs.png) no-repeat 0 -921px;
+    padding-left:46px;
+    margin:38px -20px 38px 92px;
+}
+.pay .wait .text,
+.pay .already .text
+{
+    display: block;
+    float: left;
+    /*font:37px/42px "microsoft yahei";*/
+    line-height:120px;
+    /*margin-left: -45px;*/
+    color: #717171;
+    /*padding-top: -10px;*/
+}
+
+/*账户余额  我要赚钱*/
+.balance {
+    box-sizing: border-box;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 100px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #ffffff;
+}
+
+.balance .balanceMoney,
+.balance .make {
+    box-sizing: border-box;
+    display: block;
+    width: 50%;
+    height: 100%;
+}
+.balance .balanceMoney {
+    /*box-sizing: border-box;*/
+    /*border-right: 1px solid #e5e5e5;*/
+    float: left;
+}
+.balance .make {
+    float: right;
+}
+.balance .balanceMoney .balanceMoney_pic {
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+    background:url(../images/allbgs.png) no-repeat 0 -342px;
+    padding-left:38px;
+    /*padding-left:46px;*/
+    margin:32px -20px 32px 32px;
+}
+
+.balance .balanceMoney .text,
+.balance .balanceMoney .money {
+    color: #333333;
+    line-height:100px;
+    /*margin-left: 10px;*/
+}
+
+.balance .make .text {
+    width: 155px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 30px;
+    float: right;
+    margin: 20px 32px;
+    background-color: #ff3939;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+
+/*提现记录 优惠券*/
+.record {
+    width: 100%;
+    height: 150px;
+    color: #717171;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+.record .recordMoney,
+.record .coupon {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    /*line-height: 150px;*/
+}
+
+.record .recordMoney {
+    border-right: 1px solid #e5e5e5;
+    float: left;
+}
+
+.record .coupon {
+    float: right;
+}
+
+
+.record .recordMoney .top {
+    height: 40px;
+    width: 70%;
+    margin:40px 0 0 100px;
+}
+
+.record .recordMoney .top .recordMoney_pic {
+    display: block;
+    background:url(../images/allbgs.png) no-repeat 0 -414px;
+    width: 51px;
+    height:37px;
+    padding-left:53px;
+    float: left;
+    margin: 2px 0;
+}
+.record .recordMoney .top .text {
+    display: block;
+    float: left;
+    margin-left: -30px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.record .recordMoney .num {
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: -30px;
+}
+
+
+.record .coupon .top {
+    height: 40px;
+    width: 70%;
+    margin:40px 0 0 100px;
+}
+
+.record .coupon .top .coupon_pic {
+    display: block;
+    background:url(../images/allbgs.png) no-repeat 0 -305px;
+    width: 51px;
+    height:37px;
+    padding-left:53px;
+    float: left;
+    margin: 2px 0;
+}
+.record .coupon .top .text {
+    display: block;
+    float: left;
+    margin-left: -30px;
+    font-size: 28px;
+    line-height: 40px;
+}
+.record .coupon .num {
+    font-size: 28px;
+    line-height: 40px;
+    margin-left: -30px;
+}
+
+/*我的专属顾问  我的关注商标*/
+.counselor,
+.attention
+{
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+    display: block;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #ffffff;
+    /*font-size: 32px;*/
+
+}
+.counselor {
+    margin-top: 25px;
+}
+.attention {
+    margin-bottom: 104px;
+}
+.counselor .counselor_pic {
+    display: block;
+    float: left;
+    width: 38px;
+    height:38px;
+    background:url(../images/allbgs.png) no-repeat 0 -562px;
+    padding-left:40px;
+    margin: 31px 32px;
+}
+
+.counselor .text,
+.attention .text
+{
+    display: block;
+    float: left;
+    /*font:37px/42px "microsoft yahei";*/
+    line-height:100px;
+    margin-left: -52px;
+    color: #333333;
+    /*padding-top: -10px;*/
+
+}
+.attention .text {
+    margin-left: -42px;
+}
+.attention .attention_pic {
+    display: block;
+    float: left;
+    width: 33px;
+    background:url(../images/allbgs.png) no-repeat 0 -126px;
+    height:35px;
+    padding-left:35px;
+    margin: 32px 32px;
+}
+/*底部*/
+.foot {
+    height: 104px;
+    width: 100%;
+    /*margin-top: 40px;*/
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    /*固定到手机 底部*/
+    /*position: fixed;*/
+    /*bottom: 0;*/
+}
+.foot a {
+    display: inline-block;
+    margin-right: 0;
+    height: 100%;
+    width: 20%;
+    font-size: 20px;
+    text-align:center;
+    position: relative;
+}
+/*合伙人*/
+.foot .three {
+    background-color: #ff3939;
+    color: #ffffff;
+}
+/*购物车  数量图标默认隐藏*/
+.foot .four .tu {
+    box-sizing: border-box;
+    width: 70px;
+    height: 39px;
+    float: left;
+    position: relative;
+    /*margin:32px -10px 32px 92px;*/
+    margin: 15px 40px;
+    /*border: 1px solid red;*/
+}
+.foot .four .tu .num {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 15px;
+    background-color: #ff3a3a;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    font-size: 24px;
+    top:0;
+    right: 0;
+}
+
+
+.foot .one .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -377px;
+    width: 42px;
+    height: 37px;
+    margin: 15px 54px;
+}
+.foot .two .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -678px;
+    width: 39px;
+    height:39px;
+    margin: 15px 55px;
+}
+.foot .three .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -197px;
+    height:36px;
+    padding-left:44px;
+    width: 42px;
+    margin: 15px 54px;
+
+}
+.foot .four .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -718px;
+    height:38px;
+    width: 52px;
+    margin: 0 9px;
+}
+.foot .five .footIcon {
+    background:url(../images/allbgs.png) no-repeat 0 -600px;
+    height:39px;
+    width: 40px;
+    margin: 15px 55px;
+}
+.foot .text{
+    line-height: 34px;
+    height: 30%;
+    width: 100%;
+    font-size: 20px;
+    text-align:center;
+    /*padding-bottom: 10px;*/
+    position: absolute;
+    bottom:15px;
+}
+
+
+
+
+
+
